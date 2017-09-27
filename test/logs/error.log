@@ -1,0 +1,2 @@
+2017/09/27 15:24:44 [alert] 54200#6780711: lua_code_cache is off; this will hurt performance in /Users/fanzhenjun/openresty/test/conf/luaconf/lua.conf:17
+2017/09/27 15:26:36 [error] 54310#6785267: *3 open() "/Users/fanzhenjun/openresty/test/html/favicon.ico" failed (2: No such file or directory), client: 127.0.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "127.0.0.1", referrer: "http://127.0.0.1/lua_request/1/2?a=3&b=4"
