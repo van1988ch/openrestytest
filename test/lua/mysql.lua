@@ -1,61 +1,46 @@
---nginx变量
-local var = ngx.var
-ngx.say("ngx.var.a : ", var.a, "<br/>")
-ngx.say("ngx.var.b : ", var.b, "<br/>")
-ngx.say("ngx.var[2] : ", var[2], "<br/>")
-ngx.var.b = 2;
-
-ngx.say("<br/>")
-
---请求头
-local headers = ngx.req.get_headers()
-ngx.say("headers begin", "<br/>")
-ngx.say("Host : ", headers["Host"], "<br/>")
-ngx.say("user-agent : ", headers["user-agent"], "<br/>")
-ngx.say("user-agent : ", headers.user_agent, "<br/>")
-for k,v in pairs(headers) do
-    if type(v) == "table" then
-        ngx.say(k, " : ", table.concat(v, ","), "<br/>")
-    else
-        ngx.say(k, " : ", v, "<br/>")
+local function close_db(db)
+    if not db then
+        return
     end
+    db:close()
 end
-ngx.say("headers end", "<br/>")
-ngx.say("<br/>")
 
---get请求uri参数
-ngx.say("uri args begin", "<br/>")
-local uri_args = ngx.req.get_uri_args()
-for k, v in pairs(uri_args) do
-    if type(v) == "table" then
-        ngx.say(k, " : ", table.concat(v, ", "), "<br/>")
-    else
-        ngx.say(k, ": ", v, "<br/>")
-    end
+local mysql = require("resty.mysql")
+--创建实例
+local db, err = mysql:new()
+if not db then
+    ngx.say("new mysql error : ", err)
+    return
 end
-ngx.say("uri args end", "<br/>")
-ngx.say("<br/>")
+--设置超时时间(毫秒)
+db:set_timeout(1000)
 
---post请求参数
-ngx.req.read_body()
-ngx.say("post args begin", "<br/>")
-local post_args = ngx.req.get_post_args()
-for k, v in pairs(post_args) do
-    if type(v) == "table" then
-        ngx.say(k, " : ", table.concat(v, ", "), "<br/>")
-    else
-        ngx.say(k, ": ", v, "<br/>")
-    end
+local props = {
+    host = "192.168.56.102",
+    port = 3306,
+    database = "gptg",
+    user = "root"
+}
+
+local res, err, errno, sqlstate = db:connect(props)
+
+if not res then
+   ngx.say("connect to mysql error : ", err, " , errno : ", errno, " , sqlstate : ", sqlstate)
+   return close_db(db)
 end
-ngx.say("post args end", "<br/>")
-ngx.say("<br/>")
 
---请求的http协议版本
-ngx.say("ngx.req.http_version : ", ngx.req.http_version(), "<br/>")
---请求方法
-ngx.say("ngx.req.get_method : ", ngx.req.get_method(), "<br/>")
---原始的请求头内容
-ngx.say("ngx.req.raw_header : ",  ngx.req.raw_header(), "<br/>")
---请求的body内容体
-ngx.say("ngx.req.get_body_data() : ", ngx.req.get_body_data(), "<br/>")
-ngx.say("<br/>")  
+--调用存储过程
+local select_sql = "call p_22001_UserStatu('geaoyu','sdf' , '0' , 'van')"
+res, err, errno, sqlstate = db:query(select_sql)
+if not res then
+   ngx.say("drop table error : ", err, " , errno : ", errno, " , sqlstate : ", sqlstate)
+   return close_db(db)
+end
+
+for i, row in ipairs(res) do
+   for name, value in pairs(row) do
+     ngx.say("select row ", i, " : ", name, " = ", value, "<br/>")
+   end
+end
+ 
+close_db(db)
