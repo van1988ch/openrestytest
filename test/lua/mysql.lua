@@ -19,6 +19,7 @@ local props = {
     host = "192.168.56.102",
     port = 3306,
     database = "gptg",
+    charset = "utf8",
     user = "root"
 }
 
@@ -42,5 +43,5 @@ for i, row in ipairs(res) do
      ngx.say("select row ", i, " : ", name, " = ", value, "<br/>")
    end
 end
- 
+
 close_db(db)

@@ -1,0 +1,372 @@
+2017/09/27 16:02:17 [alert] 58731#6837661: lua_code_cache is off; this will hurt performance in /Users/fanzhenjun/openresty/test/conf/luaconf/lua.conf:28
+2017/09/27 16:07:05 [alert] 58731#6837661: lua_code_cache is off; this will hurt performance in /Users/fanzhenjun/openresty/test/conf/luaconf/lua.conf:34
+2017/09/27 16:07:21 [error] 58781#6853970: *9 open() "/Users/fanzhenjun/openresty/test/html/test_other" failed (2: No such file or directory), client: 127.0.0.1, server: , request: "GET /test_other HTTP/1.1", host: "127.0.0.1"
+2017/09/27 16:30:11 [alert] 58731#6837661: lua_code_cache is off; this will hurt performance in /Users/fanzhenjun/openresty/test/conf/luaconf/lua.conf:41
+2017/09/27 16:32:27 [alert] 58731#6837661: worker process 58870 exited on signal 9
+2017/09/27 16:42:06 [alert] 58731#6837661: lua_code_cache is off; this will hurt performance in /Users/fanzhenjun/openresty/test/conf/luaconf/lua.conf:48
+2017/09/27 16:47:09 [alert] 58731#6837661: lua_code_cache is off; this will hurt performance in /Users/fanzhenjun/openresty/test/conf/luaconf/lua.conf:48
+2017/09/27 16:57:04 [alert] 58731#6837661: lua_code_cache is off; this will hurt performance in /Users/fanzhenjun/openresty/test/conf/luaconf/lua.conf:48
+2017/09/27 17:00:39 [alert] 58731#6837661: lua_code_cache is off; this will hurt performance in /Users/fanzhenjun/openresty/test/conf/luaconf/lua.conf:48
+2017/09/27 17:05:01 [alert] 58731#6837661: lua_code_cache is off; this will hurt performance in /Users/fanzhenjun/openresty/test/conf/luaconf/lua.conf:54
+2017/09/27 17:05:30 [error] 59216#6920261: *37 lua entry thread aborted: runtime error: /Users/fanzhenjun/openresty/test/lua/test_http_1.lua:1: module 'resty.http' not found:
+	no field package.preload['resty.http']
+	no file '/Users/fanzhenjun/openresty/test/lib/resty/http.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/site/lualib/resty/http.ljbc'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/site/lualib/resty/http/init.ljbc'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/lualib/resty/http.ljbc'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/lualib/resty/http/init.ljbc'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/site/lualib/resty/http.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/site/lualib/resty/http/init.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/lualib/resty/http.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/lualib/resty/http/init.lua'
+	no file './resty/http.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/luajit/share/luajit-2.1.0-beta3/resty/http.lua'
+	no file '/usr/local/share/lua/5.1/resty/http.lua'
+	no file '/usr/local/share/lua/5.1/resty/http/init.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/luajit/share/lua/5.1/resty/http.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/luajit/share/lua/5.1/resty/http/init.lua'
+	no file '/Users/fanzhenjun/openresty/test/lib/resty/http.so'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/site/lualib/resty/http.so'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/lualib/resty/http.so'
+	no file './resty/http.so'
+	no file '/usr/local/lib/lua/5.1/resty/http.so'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/luajit/lib/lua/5.1/resty/http.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+	no file '/Users/fanzhenjun/openresty/test/lib/resty.so'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/site/lualib/resty.so'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/lualib/resty.so'
+	no file './resty.so'
+	no file '/usr/local/lib/lua/5.1/resty.so'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/luajit/lib/lua/5.1/resty.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+stack traceback:
+coroutine 0:
+	[C]: in function 'require'
+	/Users/fanzhenjun/openresty/test/lua/test_http_1.lua:1: in function </Users/fanzhenjun/openresty/test/lua/test_http_1.lua:1>, client: 127.0.0.1, server: , request: "GET /lua_http_1 HTTP/1.1", host: "127.0.0.1"
+2017/09/27 17:06:36 [alert] 58731#6837661: lua_code_cache is off; this will hurt performance in /Users/fanzhenjun/openresty/test/conf/luaconf/lua.conf:54
+2017/09/27 17:06:42 [error] 59232#6923451: *39 lua entry thread aborted: runtime error: /Users/fanzhenjun/openresty/test/lib/http.lua:1: module 'resty.http_headers' not found:
+	no field package.preload['resty.http_headers']
+	no file '/Users/fanzhenjun/openresty/test/lib/resty/http_headers.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/site/lualib/resty/http_headers.ljbc'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/site/lualib/resty/http_headers/init.ljbc'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/lualib/resty/http_headers.ljbc'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/lualib/resty/http_headers/init.ljbc'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/site/lualib/resty/http_headers.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/site/lualib/resty/http_headers/init.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/lualib/resty/http_headers.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/lualib/resty/http_headers/init.lua'
+	no file './resty/http_headers.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/luajit/share/luajit-2.1.0-beta3/resty/http_headers.lua'
+	no file '/usr/local/share/lua/5.1/resty/http_headers.lua'
+	no file '/usr/local/share/lua/5.1/resty/http_headers/init.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/luajit/share/lua/5.1/resty/http_headers.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/luajit/share/lua/5.1/resty/http_headers/init.lua'
+	no file '/Users/fanzhenjun/openresty/test/lib/resty/http_headers.so'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/site/lualib/resty/http_headers.so'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/lualib/resty/http_headers.so'
+	no file './resty/http_headers.so'
+	no file '/usr/local/lib/lua/5.1/resty/http_headers.so'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/luajit/lib/lua/5.1/resty/http_headers.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+	no file '/Users/fanzhenjun/openresty/test/lib/resty.so'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/site/lualib/resty.so'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/lualib/resty.so'
+	no file './resty.so'
+	no file '/usr/local/lib/lua/5.1/resty.so'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/luajit/lib/lua/5.1/resty.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+stack traceback:
+coroutine 0:
+	[C]: in function 'require'
+	/Users/fanzhenjun/openresty/test/lua/test_http_1.lua:1: in function </Users/fanzhenjun/openresty/test/lua/test_http_1.lua:1>, client: 127.0.0.1, server: , request: "GET /lua_http_1 HTTP/1.1", host: "127.0.0.1"
+2017/09/27 17:06:44 [error] 59232#6923451: *40 lua entry thread aborted: runtime error: /Users/fanzhenjun/openresty/test/lua/test_http_1.lua:1: loop or previous error loading module 'http'
+stack traceback:
+coroutine 0:
+	[C]: in function 'require'
+	/Users/fanzhenjun/openresty/test/lua/test_http_1.lua:1: in function </Users/fanzhenjun/openresty/test/lua/test_http_1.lua:1>, client: 127.0.0.1, server: , request: "GET /lua_http_1 HTTP/1.1", host: "127.0.0.1"
+2017/09/27 17:06:44 [error] 59232#6923451: *41 lua entry thread aborted: runtime error: /Users/fanzhenjun/openresty/test/lua/test_http_1.lua:1: loop or previous error loading module 'http'
+stack traceback:
+coroutine 0:
+	[C]: in function 'require'
+	/Users/fanzhenjun/openresty/test/lua/test_http_1.lua:1: in function </Users/fanzhenjun/openresty/test/lua/test_http_1.lua:1>, client: 127.0.0.1, server: , request: "GET /lua_http_1 HTTP/1.1", host: "127.0.0.1"
+2017/09/27 17:07:18 [error] 59253#6924183: *1 lua entry thread aborted: runtime error: /Users/fanzhenjun/openresty/test/lib/http.lua:1: module 'resty.http_headers' not found:
+	no field package.preload['resty.http_headers']
+	no file '/Users/fanzhenjun/openresty/test/lib/resty/http_headers.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/site/lualib/resty/http_headers.ljbc'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/site/lualib/resty/http_headers/init.ljbc'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/lualib/resty/http_headers.ljbc'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/lualib/resty/http_headers/init.ljbc'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/site/lualib/resty/http_headers.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/site/lualib/resty/http_headers/init.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/lualib/resty/http_headers.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/lualib/resty/http_headers/init.lua'
+	no file './resty/http_headers.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/luajit/share/luajit-2.1.0-beta3/resty/http_headers.lua'
+	no file '/usr/local/share/lua/5.1/resty/http_headers.lua'
+	no file '/usr/local/share/lua/5.1/resty/http_headers/init.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/luajit/share/lua/5.1/resty/http_headers.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/luajit/share/lua/5.1/resty/http_headers/init.lua'
+	no file '/Users/fanzhenjun/openresty/test/lib/resty/http_headers.so'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/site/lualib/resty/http_headers.so'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/lualib/resty/http_headers.so'
+	no file './resty/http_headers.so'
+	no file '/usr/local/lib/lua/5.1/resty/http_headers.so'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/luajit/lib/lua/5.1/resty/http_headers.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+	no file '/Users/fanzhenjun/openresty/test/lib/resty.so'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/site/lualib/resty.so'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/lualib/resty.so'
+	no file './resty.so'
+	no file '/usr/local/lib/lua/5.1/resty.so'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/luajit/lib/lua/5.1/resty.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+stack traceback:
+coroutine 0:
+	[C]: in function 'require'
+	/Users/fanzhenjun/openresty/test/lua/test_http_1.lua:1: in function </Users/fanzhenjun/openresty/test/lua/test_http_1.lua:1>, client: 127.0.0.1, server: , request: "GET /lua_http_1 HTTP/1.1", host: "127.0.0.1"
+2017/09/27 17:07:19 [error] 59253#6924183: *2 lua entry thread aborted: runtime error: /Users/fanzhenjun/openresty/test/lua/test_http_1.lua:1: loop or previous error loading module 'http'
+stack traceback:
+coroutine 0:
+	[C]: in function 'require'
+	/Users/fanzhenjun/openresty/test/lua/test_http_1.lua:1: in function </Users/fanzhenjun/openresty/test/lua/test_http_1.lua:1>, client: 127.0.0.1, server: , request: "GET /lua_http_1 HTTP/1.1", host: "127.0.0.1"
+2017/09/27 17:09:00 [error] 59306#6925753: *1 lua entry thread aborted: runtime error: /Users/fanzhenjun/openresty/test/lib/http.lua:1: module 'resty.http_headers' not found:
+	no field package.preload['resty.http_headers']
+	no file '/Users/fanzhenjun/openresty/test/lib/resty/http_headers.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/site/lualib/resty/http_headers.ljbc'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/site/lualib/resty/http_headers/init.ljbc'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/lualib/resty/http_headers.ljbc'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/lualib/resty/http_headers/init.ljbc'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/site/lualib/resty/http_headers.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/site/lualib/resty/http_headers/init.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/lualib/resty/http_headers.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/lualib/resty/http_headers/init.lua'
+	no file './resty/http_headers.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/luajit/share/luajit-2.1.0-beta3/resty/http_headers.lua'
+	no file '/usr/local/share/lua/5.1/resty/http_headers.lua'
+	no file '/usr/local/share/lua/5.1/resty/http_headers/init.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/luajit/share/lua/5.1/resty/http_headers.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/luajit/share/lua/5.1/resty/http_headers/init.lua'
+	no file '/Users/fanzhenjun/openresty/test/lib/resty/http_headers.so'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/site/lualib/resty/http_headers.so'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/lualib/resty/http_headers.so'
+	no file './resty/http_headers.so'
+	no file '/usr/local/lib/lua/5.1/resty/http_headers.so'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/luajit/lib/lua/5.1/resty/http_headers.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+	no file '/Users/fanzhenjun/openresty/test/lib/resty.so'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/site/lualib/resty.so'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/lualib/resty.so'
+	no file './resty.so'
+	no file '/usr/local/lib/lua/5.1/resty.so'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/luajit/lib/lua/5.1/resty.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+stack traceback:
+coroutine 0:
+	[C]: in function 'require'
+	/Users/fanzhenjun/openresty/test/lua/test_http_1.lua:1: in function </Users/fanzhenjun/openresty/test/lua/test_http_1.lua:1>, client: 127.0.0.1, server: , request: "GET /lua_http_1 HTTP/1.1", host: "127.0.0.1"
+2017/09/27 17:12:03 [error] 59306#6925753: *3 lua entry thread aborted: runtime error: /Users/fanzhenjun/openresty/test/lua/test_http_1.lua:1: loop or previous error loading module 'http'
+stack traceback:
+coroutine 0:
+	[C]: in function 'require'
+	/Users/fanzhenjun/openresty/test/lua/test_http_1.lua:1: in function </Users/fanzhenjun/openresty/test/lua/test_http_1.lua:1>, client: 127.0.0.1, server: , request: "GET /lua_http_1 HTTP/1.1", host: "127.0.0.1"
+2017/09/27 17:13:33 [emerg] 60499#6934449: bind() to 0.0.0.0:80 failed (48: Address already in use)
+2017/09/27 17:13:33 [emerg] 60499#6934449: bind() to 0.0.0.0:80 failed (48: Address already in use)
+2017/09/27 17:13:33 [emerg] 60499#6934449: bind() to 0.0.0.0:80 failed (48: Address already in use)
+2017/09/27 17:13:33 [emerg] 60499#6934449: bind() to 0.0.0.0:80 failed (48: Address already in use)
+2017/09/27 17:13:41 [alert] 59305#6925752: lua_code_cache is off; this will hurt performance in /Users/fanzhenjun/openresty/test/conf/luaconf/lua.conf:54
+2017/09/27 17:14:36 [alert] 59305#6925752: lua_code_cache is off; this will hurt performance in /Users/fanzhenjun/openresty/test/conf/luaconf/lua.conf:54
+2017/09/27 17:21:54 [alert] 59305#6925752: lua_code_cache is off; this will hurt performance in /Users/fanzhenjun/openresty/test/conf/luaconf/lua.conf:54
+2017/09/27 17:24:31 [alert] 59305#6925752: lua_code_cache is off; this will hurt performance in /Users/fanzhenjun/openresty/test/conf/luaconf/lua.conf:54
+2017/09/27 17:24:36 [error] 60583#6947836: *15 lua entry thread aborted: runtime error: /Users/fanzhenjun/openresty/test/lua/mysql.lua:40: bad argument #1 to 'say' (non-array table found)
+stack traceback:
+coroutine 0:
+	[C]: in function 'say'
+	/Users/fanzhenjun/openresty/test/lua/mysql.lua:40: in function </Users/fanzhenjun/openresty/test/lua/mysql.lua:1>, client: 127.0.0.1, server: , request: "GET /lua_mysql HTTP/1.1", host: "127.0.0.1"
+2017/09/27 17:25:24 [alert] 59305#6925752: lua_code_cache is off; this will hurt performance in /Users/fanzhenjun/openresty/test/conf/luaconf/lua.conf:54
+2017/09/27 17:26:26 [alert] 59305#6925752: lua_code_cache is off; this will hurt performance in /Users/fanzhenjun/openresty/test/conf/luaconf/lua.conf:54
+2017/09/27 17:27:22 [alert] 59305#6925752: lua_code_cache is off; this will hurt performance in /Users/fanzhenjun/openresty/test/conf/luaconf/lua.conf:54
+2017/09/27 17:28:17 [alert] 59305#6925752: lua_code_cache is off; this will hurt performance in /Users/fanzhenjun/openresty/test/conf/luaconf/lua.conf:54
+2017/09/27 17:38:46 [emerg] 60792#6964847: bind() to 0.0.0.0:80 failed (48: Address already in use)
+2017/09/27 17:38:46 [emerg] 60792#6964847: bind() to 0.0.0.0:80 failed (48: Address already in use)
+2017/09/27 17:38:46 [emerg] 60792#6964847: bind() to 0.0.0.0:80 failed (48: Address already in use)
+2017/09/27 17:38:46 [emerg] 60792#6964847: bind() to 0.0.0.0:80 failed (48: Address already in use)
+2017/09/27 17:38:55 [alert] 60781#6964259: lua_code_cache is off; this will hurt performance in /Users/fanzhenjun/openresty/test/conf/luaconf/lua.conf:54
+2017/09/27 17:40:25 [alert] 60781#6964259: lua_code_cache is off; this will hurt performance in /Users/fanzhenjun/openresty/test/conf/luaconf/lua.conf:55
+2017/09/27 17:41:11 [alert] 60781#6964259: lua_code_cache is off; this will hurt performance in /Users/fanzhenjun/openresty/test/conf/luaconf/lua.conf:55
+2017/09/27 17:42:03 [alert] 60781#6964259: lua_code_cache is off; this will hurt performance in /Users/fanzhenjun/openresty/test/conf/luaconf/lua.conf:55
+2017/09/27 17:42:34 [alert] 60781#6964259: lua_code_cache is off; this will hurt performance in /Users/fanzhenjun/openresty/test/conf/luaconf/lua.conf:55
+2017/09/27 17:44:03 [alert] 60781#6964259: lua_code_cache is off; this will hurt performance in /Users/fanzhenjun/openresty/test/conf/luaconf/lua.conf:55
+2017/09/27 17:44:06 [error] 60863#6972669: *14 lua entry thread aborted: runtime error: /Users/fanzhenjun/openresty/test/lua/mysql.lua:45: module 'iconv' not found:
+	no field package.preload['iconv']
+	no file '/Users/fanzhenjun/openresty/test/lib/iconv.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/site/lualib/iconv.ljbc'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/site/lualib/iconv/init.ljbc'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/lualib/iconv.ljbc'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/lualib/iconv/init.ljbc'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/site/lualib/iconv.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/site/lualib/iconv/init.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/lualib/iconv.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/lualib/iconv/init.lua'
+	no file './iconv.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/luajit/share/luajit-2.1.0-beta3/iconv.lua'
+	no file '/usr/local/share/lua/5.1/iconv.lua'
+	no file '/usr/local/share/lua/5.1/iconv/init.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/luajit/share/lua/5.1/iconv.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/luajit/share/lua/5.1/iconv/init.lua'
+	no file '/Users/fanzhenjun/openresty/test/lib/iconv.so'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/site/lualib/iconv.so'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/lualib/iconv.so'
+	no file './iconv.so'
+	no file '/usr/local/lib/lua/5.1/iconv.so'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/luajit/lib/lua/5.1/iconv.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+stack traceback:
+coroutine 0:
+	[C]: in function 'require'
+	/Users/fanzhenjun/openresty/test/lua/mysql.lua:45: in function </Users/fanzhenjun/openresty/test/lua/mysql.lua:1>, client: 127.0.0.1, server: , request: "GET /lua_mysql HTTP/1.1", host: "127.0.0.1"
+2017/09/27 17:44:07 [error] 60863#6972669: *16 lua entry thread aborted: runtime error: /Users/fanzhenjun/openresty/test/lua/mysql.lua:45: module 'iconv' not found:
+	no field package.preload['iconv']
+	no file '/Users/fanzhenjun/openresty/test/lib/iconv.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/site/lualib/iconv.ljbc'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/site/lualib/iconv/init.ljbc'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/lualib/iconv.ljbc'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/lualib/iconv/init.ljbc'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/site/lualib/iconv.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/site/lualib/iconv/init.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/lualib/iconv.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/lualib/iconv/init.lua'
+	no file './iconv.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/luajit/share/luajit-2.1.0-beta3/iconv.lua'
+	no file '/usr/local/share/lua/5.1/iconv.lua'
+	no file '/usr/local/share/lua/5.1/iconv/init.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/luajit/share/lua/5.1/iconv.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/luajit/share/lua/5.1/iconv/init.lua'
+	no file '/Users/fanzhenjun/openresty/test/lib/iconv.so'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/site/lualib/iconv.so'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/lualib/iconv.so'
+	no file './iconv.so'
+	no file '/usr/local/lib/lua/5.1/iconv.so'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/luajit/lib/lua/5.1/iconv.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+stack traceback:
+coroutine 0:
+	[C]: in function 'require'
+	/Users/fanzhenjun/openresty/test/lua/mysql.lua:45: in function </Users/fanzhenjun/openresty/test/lua/mysql.lua:1>, client: 127.0.0.1, server: , request: "GET /lua_mysql HTTP/1.1", host: "127.0.0.1"
+2017/09/27 17:44:12 [error] 60863#6972669: *18 lua entry thread aborted: runtime error: /Users/fanzhenjun/openresty/test/lua/mysql.lua:45: module 'iconv' not found:
+	no field package.preload['iconv']
+	no file '/Users/fanzhenjun/openresty/test/lib/iconv.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/site/lualib/iconv.ljbc'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/site/lualib/iconv/init.ljbc'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/lualib/iconv.ljbc'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/lualib/iconv/init.ljbc'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/site/lualib/iconv.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/site/lualib/iconv/init.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/lualib/iconv.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/lualib/iconv/init.lua'
+	no file './iconv.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/luajit/share/luajit-2.1.0-beta3/iconv.lua'
+	no file '/usr/local/share/lua/5.1/iconv.lua'
+	no file '/usr/local/share/lua/5.1/iconv/init.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/luajit/share/lua/5.1/iconv.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/luajit/share/lua/5.1/iconv/init.lua'
+	no file '/Users/fanzhenjun/openresty/test/lib/iconv.so'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/site/lualib/iconv.so'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/lualib/iconv.so'
+	no file './iconv.so'
+	no file '/usr/local/lib/lua/5.1/iconv.so'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/luajit/lib/lua/5.1/iconv.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+stack traceback:
+coroutine 0:
+	[C]: in function 'require'
+	/Users/fanzhenjun/openresty/test/lua/mysql.lua:45: in function </Users/fanzhenjun/openresty/test/lua/mysql.lua:1>, client: 127.0.0.1, server: , request: "GET /lua_mysql HTTP/1.1", host: "127.0.0.1"
+2017/09/27 17:44:42 [error] 60863#6972669: *20 lua entry thread aborted: runtime error: /Users/fanzhenjun/openresty/test/lua/mysql.lua:45: module 'iconv' not found:
+	no field package.preload['iconv']
+	no file '/Users/fanzhenjun/openresty/test/lib/iconv.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/site/lualib/iconv.ljbc'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/site/lualib/iconv/init.ljbc'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/lualib/iconv.ljbc'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/lualib/iconv/init.ljbc'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/site/lualib/iconv.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/site/lualib/iconv/init.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/lualib/iconv.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/lualib/iconv/init.lua'
+	no file './iconv.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/luajit/share/luajit-2.1.0-beta3/iconv.lua'
+	no file '/usr/local/share/lua/5.1/iconv.lua'
+	no file '/usr/local/share/lua/5.1/iconv/init.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/luajit/share/lua/5.1/iconv.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/luajit/share/lua/5.1/iconv/init.lua'
+	no file '/Users/fanzhenjun/openresty/test/lib/iconv.so'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/site/lualib/iconv.so'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/lualib/iconv.so'
+	no file './iconv.so'
+	no file '/usr/local/lib/lua/5.1/iconv.so'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/luajit/lib/lua/5.1/iconv.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+stack traceback:
+coroutine 0:
+	[C]: in function 'require'
+	/Users/fanzhenjun/openresty/test/lua/mysql.lua:45: in function </Users/fanzhenjun/openresty/test/lua/mysql.lua:1>, client: 127.0.0.1, server: , request: "GET /lua_mysql HTTP/1.1", host: "127.0.0.1"
+2017/09/27 17:45:42 [error] 60863#6972669: *22 lua entry thread aborted: runtime error: /Users/fanzhenjun/openresty/test/lua/mysql.lua:45: module 'iconv' not found:
+	no field package.preload['iconv']
+	no file '/Users/fanzhenjun/openresty/test/lib/iconv.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/site/lualib/iconv.ljbc'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/site/lualib/iconv/init.ljbc'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/lualib/iconv.ljbc'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/lualib/iconv/init.ljbc'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/site/lualib/iconv.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/site/lualib/iconv/init.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/lualib/iconv.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/lualib/iconv/init.lua'
+	no file './iconv.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/luajit/share/luajit-2.1.0-beta3/iconv.lua'
+	no file '/usr/local/share/lua/5.1/iconv.lua'
+	no file '/usr/local/share/lua/5.1/iconv/init.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/luajit/share/lua/5.1/iconv.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/luajit/share/lua/5.1/iconv/init.lua'
+	no file '/Users/fanzhenjun/openresty/test/lib/iconv.so'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/site/lualib/iconv.so'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/lualib/iconv.so'
+	no file './iconv.so'
+	no file '/usr/local/lib/lua/5.1/iconv.so'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/luajit/lib/lua/5.1/iconv.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+stack traceback:
+coroutine 0:
+	[C]: in function 'require'
+	/Users/fanzhenjun/openresty/test/lua/mysql.lua:45: in function </Users/fanzhenjun/openresty/test/lua/mysql.lua:1>, client: 127.0.0.1, server: , request: "GET /lua_mysql HTTP/1.1", host: "127.0.0.1"
+2017/09/27 17:50:42 [error] 60863#6972669: *24 lua entry thread aborted: runtime error: /Users/fanzhenjun/openresty/test/lua/mysql.lua:45: module 'iconv' not found:
+	no field package.preload['iconv']
+	no file '/Users/fanzhenjun/openresty/test/lib/iconv.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/site/lualib/iconv.ljbc'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/site/lualib/iconv/init.ljbc'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/lualib/iconv.ljbc'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/lualib/iconv/init.ljbc'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/site/lualib/iconv.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/site/lualib/iconv/init.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/lualib/iconv.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/lualib/iconv/init.lua'
+	no file './iconv.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/luajit/share/luajit-2.1.0-beta3/iconv.lua'
+	no file '/usr/local/share/lua/5.1/iconv.lua'
+	no file '/usr/local/share/lua/5.1/iconv/init.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/luajit/share/lua/5.1/iconv.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/luajit/share/lua/5.1/iconv/init.lua'
+	no file '/Users/fanzhenjun/openresty/test/lib/iconv.so'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/site/lualib/iconv.so'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/lualib/iconv.so'
+	no file './iconv.so'
+	no file '/usr/local/lib/lua/5.1/iconv.so'
+	no file '/usr/local/Cellar/openresty/1.11.2.5/luajit/lib/lua/5.1/iconv.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+stack traceback:
+coroutine 0:
+	[C]: in function 'require'
+	/Users/fanzhenjun/openresty/test/lua/mysql.lua:45: in function </Users/fanzhenjun/openresty/test/lua/mysql.lua:1>, client: 127.0.0.1, server: , request: "GET /lua_mysql HTTP/1.1", host: "127.0.0.1"
+2017/09/27 17:51:30 [alert] 60781#6964259: lua_code_cache is off; this will hurt performance in /Users/fanzhenjun/openresty/test/conf/luaconf/lua.conf:55
+2017/09/27 17:52:09 [alert] 60781#6964259: lua_code_cache is off; this will hurt performance in /Users/fanzhenjun/openresty/test/conf/luaconf/lua.conf:54
+2017/09/27 18:18:59 [error] 61020#6981780: *30 open() "/Users/fanzhenjun/openresty/test/html/favicon.ico" failed (2: No such file or directory), client: 127.0.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "127.0.0.1", referrer: "http://127.0.0.1/lua_mysql"
+2017/09/27 18:21:50 [error] 61020#6981780: *32 open() "/Users/fanzhenjun/openresty/test/html/favicon.ico" failed (2: No such file or directory), client: 127.0.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "127.0.0.1", referrer: "http://127.0.0.1/lua_mysql"
+2017/10/04 21:22:26 [alert] 60781#6964259: worker process 61021 exited on signal 9
+2017/10/04 21:22:26 [alert] 60781#6964259: worker process 61020 exited on signal 9
